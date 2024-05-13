@@ -1,10 +1,9 @@
-import static org.junit.jupiter.api.Assertions.*;
+import junit.framework.TestCase;
 
-class MainTest {
+public class MainTest extends TestCase {
 
-    @org.junit.jupiter.api.Test
-    void testAdded() {
+    public void testAdded() {
         Main main = new Main();
-        assertEquals(10, main.added(4,6));
+        assertEquals(10, main.added(6,4));
     }
 }
